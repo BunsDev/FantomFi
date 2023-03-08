@@ -17,10 +17,4 @@ export const tokens = [
     address: "0x3ebc886aBd59eB66146BD2bcee4de7BEA3Fd2eb6",
     logo: "",
   },
-  {
-    name: "USDX",
-    symbol: "USDX",
-    address: "",
-    logo: "",
-  },
 ];

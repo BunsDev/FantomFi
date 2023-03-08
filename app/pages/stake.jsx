@@ -136,11 +136,11 @@ export default function Stake() {
 
   const stakeTokens = async () => {
     try {
-      // await approveTokens(
-      //   selectedToken.address,
-      //   poolAddress,
-      //   ethers.utils.parseEther(inputAmount.toString())
-      // );
+      await approveTokens(
+        selectedToken.address,
+        poolAddress,
+        ethers.utils.parseEther(inputAmount.toString())
+      );
       // add the required address
       const _stake = await contract.stake(
         selectedToken.address,

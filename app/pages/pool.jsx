@@ -252,10 +252,10 @@ export default function Pool() {
   ) => {
     try {
       if (addressTokenA && addressTokenA && liquidityAmount) {
-        // await approveTokens(
-        //   pairAddress,
-        //   ethers.utils.parseEther(liquidityAmount.toString())
-        // );
+        await approveTokens(
+          pairAddress,
+          ethers.utils.parseEther(liquidityAmount.toString())
+        );
         const _deadline = getDeadline();
         const _removeLiquidity = await contract.removeLiquidity(
           addressTokenA,
@@ -360,7 +360,7 @@ export default function Pool() {
 
   /// fetched reserves when both tokens are set
   useEffect(() => {
-    console.log(selectedToken1, selectedToken2);
+    // console.log(selectedToken1, selectedToken2);
     if (
       selectedToken1 != 0 &&
       selectedToken2 != 0 &&
