@@ -15,3 +15,4 @@ contract Token2 is ERC20, Ownable {
         _burn(to, amount);
     }
 }
+

@@ -1,47 +1,37 @@
 ### Token1 -
 
-xdc1927d7a542826728a25B23Acd280B57AC37bb930
-0x1927d7a542826728a25B23Acd280B57AC37bb930
-https://explorer.apothem.network/address/xdc1927d7a542826728a25B23Acd280B57AC37bb930#transactions
+0x8293ab89EB972186D928C827FbE47e29d46606D7
+https://testnet.ftmscan.com/address/0x8293ab89EB972186D928C827FbE47e29d46606D7
 
 ### Token2 -
 
-xdceC80ee7f0e65f696f09206859615ffE5626c384C
-0xeC80ee7f0e65f696f09206859615ffE5626c384C
-https://explorer.apothem.network/address/xdceC80ee7f0e65f696f09206859615ffE5626c384C#transactions
+0x3ebc886aBd59eB66146BD2bcee4de7BEA3Fd2eb6
+https://testnet.ftmscan.com/address/0x3ebc886aBd59eB66146BD2bcee4de7BEA3Fd2eb6
 
-### WXDC -
+### WFTM -
 
-xdcA5A51315b449C7026164111ED142E87cd1C865B7
-0xA5A51315b449C7026164111ED142E87cd1C865B7
-
-https://explorer.apothem.network/address/xdca5a51315b449c7026164111ed142e87cd1c865b7#transactions
-
-xdc1152bCb79Ca6Fd12c35b13f7bE0Bb8D563eF99D1
+0xeDFA5C57C5396d2767bf74368291c9890BcDea14
+https://testnet.ftmscan.com/address/0xeDFA5C57C5396d2767bf74368291c9890BcDea14
 
 ## WETH
 
-xdc1469db37eC1658a6405d968a5812583F5b79331e
-0x1469db37eC1658a6405d968a5812583F5b79331e
-https://explorer.apothem.network/address/xdc1469db37eC1658a6405d968a5812583F5b79331e#transactions
+0xf2d9E6Fcbd6218F84e43BBF0d9438E6a4e3b9cE0
+https://testnet.ftmscan.com/address/0xf2d9E6Fcbd6218F84e43BBF0d9438E6a4e3b9cE0
 
 ## Rtoken - Staking Reward
 
-xdcAc30b602A0035c3a97CB482d2B3A490a113938CE
-0xAc30b602A0035c3a97CB482d2B3A490a113938CE
-https://explorer.apothem.network/address/xdcAc30b602A0035c3a97CB482d2B3A490a113938CE#transactions
+0x5F6b775d0c8834263F09b1CF736c6673174E0810
+https://testnet.ftmscan.com/address/0x5F6b775d0c8834263F09b1CF736c6673174E0810
 
 ## XSwap Factory
 
-xdcEe5045c2cca298d1965dE00493fF7Cb33BbAD2Ab
-0xEe5045c2cca298d1965dE00493fF7Cb33BbAD2Ab
-https://explorer.apothem.network/address/xdcEe5045c2cca298d1965dE00493fF7Cb33BbAD2Ab#transactions
+0x59258475884E8d798F77420115369E4C31B1B4dA
+https://testnet.ftmscan.com/address/0x59258475884E8d798F77420115369E4C31B1B4dA
 
 ## XSwap Router
 
-xdcECb0d45B9d96ad2D7DfDA1267dff33de4d33E175
-0xECb0d45B9d96ad2D7DfDA1267dff33de4d33E175
-https://explorer.apothem.network/address/xdcECb0d45B9d96ad2D7DfDA1267dff33de4d33E175#transactions
+0x1E1AC787A64f0b1CEE4eF8c431000C53d9444Ed9
+https://testnet.ftmscan.com/address/0x1E1AC787A64f0b1CEE4eF8c431000C53d9444Ed9
 
 ## XSwap Oracle
 
@@ -55,25 +45,20 @@ https://explorer.apothem.network/address/xdc0799B2EcC59039EC318dD4BB328C092C7B34
 
 ## Lending Factory
 
-xdcFbA6E5cB5250FB3d5EbD0e51a99f6c3C947160C8
-0xFbA6E5cB5250FB3d5EbD0e51a99f6c3C947160C8
-https://explorer.apothem.network/address/xdcFbA6E5cB5250FB3d5EbD0e51a99f6c3C947160C8#transactions
+0x768E1897954e92DeCaaea9C0801D92C900aBb74a
+https://testnet.ftmscan.com/address/0x768E1897954e92DeCaaea9C0801D92C900aBb74a
 
 ## Lending Router
 
-xdc8adb1DE674A4FC96CE66A88C8C5c9A0f38A83715
-0x8adb1DE674A4FC96CE66A88C8C5c9A0f38A83715
-https://explorer.apothem.network/address/xdc8adb1DE674A4FC96CE66A88C8C5c9A0f38A83715#transactions
+0x229073dfaf20c8eA257505aA942A2CF77a0e0260
+https://testnet.ftmscan.com/address/0x229073dfaf20c8eA257505aA942A2CF77a0e0260
 
 ## Staking Factory
 
-xdcb254a0e6d8b26F4CAe66deC3289E941bd51FFc39
-0xb254a0e6d8b26F4CAe66deC3289E941bd51FFc39
-https://explorer.apothem.network/address/xdcb254a0e6d8b26F4CAe66deC3289E941bd51FFc39#transactions
+0x35FE2414B00bCEf203A8D6DF1Cd45312Bcd12C62
+https://testnet.ftmscan.com/address/0x35FE2414B00bCEf203A8D6DF1Cd45312Bcd12C62
 
 ## Stakig Router
 
-xdcB3F71eF36B731A9B1A3aB7C86989c57384b44415
-0xB3F71eF36B731A9B1A3aB7C86989c57384b44415
-https://explorer.apothem.network/address/
-xdcB3F71eF36B731A9B1A3aB7C86989c57384b44415#transactions
+0x0E8EFD85Ad306e330946306CcCAE356FB29A9a56
+https://testnet.ftmscan.com/address/0x0E8EFD85Ad306e330946306CcCAE356FB29A9a56

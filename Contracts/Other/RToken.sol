@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract RToken is ERC20, Ownable {
     address public approved;
 
-    constructor() ERC20("X Reward", "XR") {}
+    constructor() ERC20("FTM Reward", "FTMR") {}
 
     modifier onlyApproved() {
         require(msg.sender == approved, "Not Authorised");

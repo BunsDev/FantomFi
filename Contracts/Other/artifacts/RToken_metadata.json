@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -396,6 +396,14 @@
 			}
 		],
 		"devdoc": {
+			"events": {
+				"Approval(address,address,uint256)": {
+					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
+				},
+				"Transfer(address,address,uint256)": {
+					"details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
+				}
+			},
 			"kind": "dev",
 			"methods": {
 				"allowance(address,address)": {
@@ -454,7 +462,7 @@
 		"compilationTarget": {
 			"Other/RToken.sol": "RToken"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -507,11 +515,11 @@
 			]
 		},
 		"Other/RToken.sol": {
-			"keccak256": "0xea39c0c7d5556fee175ce694fae4baa577ab7851b035c1252c6a6ae425add6cb",
+			"keccak256": "0xbfc69afb6f1a21a2d729ef5fa4b38f7f4e064929426465fe7deee09c051dc1c1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e45f36e7738bd01f484b2dd0a4e58f1c700a52c0618ffbe98fcc5e92f53987e2",
-				"dweb:/ipfs/QmR4sCj8m5VfP78AgzuRYC7R6JGYD6gJPxV8DkUcbxe1YN"
+				"bzz-raw://3fb3adb56396fcd0037ebe13095c83675e1493942f4c114145a795f3c49d978f",
+				"dweb:/ipfs/Qmf84SJJHg5tRhYqTLVgr4G62AEtiZqGw9NGWJmvCHStLv"
 			]
 		}
 	},
