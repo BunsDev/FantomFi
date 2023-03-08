@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import styles from '../styles/Home.module.css'
-import BuyXDC from "../components/BuyXDC";
+import BuyFantom from "../components/BuyFantom";
 
 export default function Coin() {
   const [expand, setExpand] = useState(false);
@@ -14,7 +14,7 @@ export default function Coin() {
       }`}
     >
       <Navbar expand={expand} setExpand={setExpand} />
-      {expand ? null : <BuyXDC />}
+      {expand ? null : <BuyFantom />}
       <div className=" w-full">
       <Footer />
 

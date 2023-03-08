@@ -5,14 +5,14 @@ import { MdClose } from "react-icons/md";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 
-export default function BuyXDC() {
+export default function BuyFantom() {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className=" md:mt4 flex justify-center lg:justify-around items-center flex-wrap-reverse text-white">
       <div className="">
         <h2 className="text-4xl text-skin-base my-4 tracking-wide leading-tight lg:text-5xl mb-6">
-          XDC
+          Fantom
           <br />
           Stable<span className="text-orange-400">Coin</span>
         </h2>
@@ -28,7 +28,7 @@ export default function BuyXDC() {
             className="  w-8 mr-2"
             src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/ffffff/external-wallet-interface-kiranshastry-lineal-kiranshastry.png"
           />
-          Buy XDC
+          Buy Fantom
         </button>
       </div>
       <div className="  md:w-1/3 mx-auto md:mx-0 lg:my-8 mt-0 order-2 ">
@@ -50,7 +50,7 @@ export default function BuyXDC() {
             border rounded-lg border-gray-500 px-4 py-6 bg-transparent backdrop-blur-xl bg-shade-bg sm:max-w-full  h-1/2 sm:w-1/2 sm:h-1/2 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
         >
           <p className="sm:mb-4 mb-6 text-lg md:w-full w-52  text-center">
-            Enter Amount to get XDC-Stable coin
+            Enter Amount to get Fantom-Stable coin
           </p>
           <div className=" flex items-center justify-center mt-4">
             <input
@@ -61,7 +61,7 @@ export default function BuyXDC() {
               placeholder="0"
               required
             />
-            {/* <p className=" md:pl-5 pl-3 md:w-44 ">XDC Coin</p> */}
+            {/* <p className=" md:pl-5 pl-3 md:w-44 ">Fantom Coin</p> */}
           </div>
           <a
             className="self-center text-center fixed z-50 top-1 sm:left-full left-[78%] rounded-full bg-white curosor-pointer md:ml-3 m-2 px-2 py-2 "
@@ -94,7 +94,7 @@ export default function BuyXDC() {
 <div className="md:flex items-center justify-center ">
   <div className=" md:w-3/5 px-32 lg:pl-40">
     <h2 className="text-4xl text-skin-base my-4 tracking-wide leading-tight lg:text-5xl mb-6">
-      XDC
+      Fantom
       <br />
       Stable<span className="text-orange-400">Coin</span>
     </h2>
@@ -111,7 +111,7 @@ export default function BuyXDC() {
           className=" w-8 mr-2"
           src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/ffffff/external-wallet-interface-kiranshastry-lineal-kiranshastry.png"
         />
-        Buy XDC
+        Buy Fantom
       </button>
      
     </div>
@@ -141,7 +141,7 @@ w-[100vw] h-[100vh] bg-gray-900 bg-opacity-80 backdrop-blur-sm fixed z-40 top-1/
 
 bg-shade-bg sm:max-w-full  h-1/2 sm:w-1/2 sm:h-1/2 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
   <p className="sm:mb-4 mb-6 text-lg">
-    Enter Amount of XDC Stable coin
+    Enter Amount of Fantom Stable coin
   </p>
   <div className=" px-2 flex flex-col sm:flex-row justify-center items-center">
    
@@ -154,7 +154,7 @@ bg-shade-bg sm:max-w-full  h-1/2 sm:w-1/2 sm:h-1/2 fixed top-1/2 left-1/2 transf
       placeholder="0"
       required
     />
-    <p className=" ">XDC Coin</p>
+    <p className=" ">Fantom Coin</p>
     <a
       className="self-center text-center fixed z-50 top-1 sm:left-full left-[78%] rounded-full ml-3 bg-white curosor-pointer px-2 py-2 "
       onClick={() => {

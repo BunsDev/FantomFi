@@ -2,7 +2,7 @@ export const TOKEN_ONE_ADDRESS = "0x8293ab89EB972186D928C827FbE47e29d46606D7";
 
 export const TOKEN_TWO_ADDRESS = "0x3ebc886aBd59eB66146BD2bcee4de7BEA3Fd2eb6";
 
-export const WXDC_ADDRESS = "0xeDFA5C57C5396d2767bf74368291c9890BcDea14";
+export const WFantom_ADDRESS = "0xeDFA5C57C5396d2767bf74368291c9890BcDea14";
 
 export const SWAP_ROUTER_ADDRESS = "0x1E1AC787A64f0b1CEE4eF8c431000C53d9444Ed9";
 
@@ -25,7 +25,7 @@ export const LENDING_CONTRACT_ABI = [
       },
       {
         internalType: "address",
-        name: "xdcWrapper",
+        name: "FantomWrapper",
         type: "address",
       },
     ],
@@ -34,7 +34,7 @@ export const LENDING_CONTRACT_ABI = [
   },
   {
     inputs: [],
-    name: "WEXDC",
+    name: "WEFantom",
     outputs: [
       {
         internalType: "address",
@@ -351,7 +351,7 @@ export const STAKING_CONTRACT_ABI = [
       },
       {
         internalType: "address",
-        name: "xdcWrapper",
+        name: "FantomWrapper",
         type: "address",
       },
       {
@@ -365,7 +365,7 @@ export const STAKING_CONTRACT_ABI = [
   },
   {
     inputs: [],
-    name: "WEXDC",
+    name: "WEFantom",
     outputs: [
       {
         internalType: "address",

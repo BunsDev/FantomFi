@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
         <div className="border-2 border-[#FCF8E8] rounded-full p-2">
           <a
-            href="https://github.com/Abbas-Khann/SC-DEX-XDC"
+            href="https://github.com/Abbas-Khann/SC-DEX-Fantom"
             target="_blank"
             rel="noreferrer"
           >

@@ -6,11 +6,11 @@ export const fetchPrice = () => {
   try {
     axios
       .get(
-        `https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=XDC&CMC_PRO_API_KEY=${CMP_AUTH_KEY}`
+        `https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?symbol=Fantom&CMC_PRO_API_KEY=${CMP_AUTH_KEY}`
       )
       .then((data) => {
         console.log("Current price fetched");
-        const price = data.data.XDC.quote.USD.price;
+        const price = data.data.Fantom.quote.USD.price;
         console.log(price);
         return price;
       })
