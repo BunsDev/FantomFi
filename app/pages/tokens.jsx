@@ -48,9 +48,9 @@ export default function Tokens() {
                     >
                       Fantom
                     </th>
-                    <td className="py-4 px-6">$ 1,185.93</td>
-                    <td className="py-4 px-6">-0.90%</td>
-                    <td className="py-4 px-6">$ 800M</td>
+                    <td className="py-4 px-6">$ 0.37 </td>
+                    <td className="py-4 px-6"> -5.44% </td>
+                    <td className="py-4 px-6">$ 1.2B </td>
                     <td className="py-4 px-6">
                       <a
                         className=""
@@ -58,7 +58,7 @@ export default function Tokens() {
                         rel="noreferrer"
                         href="#"
                       >
-                        $ 4.4M
+                        $ 186M
                       </a>
                     </td>
                   </tr>

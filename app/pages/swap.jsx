@@ -191,6 +191,7 @@ export default function Swap() {
   const swapExactAmountOfTokens = async (valueIn, path) => {
     try {
       if (valueIn) {
+        setLoading(true);
         await approveTokens(selectedToken1.address, valueIn);
         // path[0] = selectedToken1.address;
         // path[1] = selectedToken1.address;
@@ -203,13 +204,13 @@ export default function Swap() {
           address,
           deadline
         );
-        setLoading(true);
         await _swapExactTokens.wait();
         setLoading(false);
         // taost.success("swapped");
       }
     } catch (err) {
       // toast.err(err.reason)
+      setLoading(true);
       console.error(err);
     }
   };
@@ -217,6 +218,7 @@ export default function Swap() {
   const swapTokensForExactAmount = async (valueOut, path) => {
     try {
       if (valueOut) {
+        setLoading(true);
         const deadline = getDeadline();
         // console.log(valueOut);
         const _swapTokens = await contract.swapTokensForExactTokens(
@@ -226,13 +228,13 @@ export default function Swap() {
           address,
           deadline
         );
-        setLoading(true);
         await _swapTokens.wait();
         setLoading(false);
         // taost.success("SWAPPED!!!");
       }
     } catch (err) {
       // taost.error("err.reason")
+      setLoading(true);
       console.error(err);
     }
   };
@@ -240,7 +242,8 @@ export default function Swap() {
   // payable func
   const swapExactAmountOfEthForTokens = async (valueIn, path) => {
     try {
-      if (valueOut) {
+      if (valueIn) {
+        setLoading(true);
         const _amount = ethers.utils.parseEther(valueIn.toString());
         const _deadline = getDeadline();
         const _swapEth = await contract.swapExactETHForTokens(
@@ -252,7 +255,6 @@ export default function Swap() {
             value: _amount,
           }
         );
-        setLoading(true);
         await _swapEth.wait();
         setLoading(false);
         // toast.success();
@@ -266,6 +268,7 @@ export default function Swap() {
   const swapEthForExactAmountOfTokens = async (valueOut, path, valueETH) => {
     try {
       if (valueOut) {
+        setLoading(true);
         const _amount = ethers.utils.parseEther(valueETH.toString());
         const _deadline = getDeadline();
         const _swapTokens = await contract.swapETHForExactTokens(
@@ -277,7 +280,6 @@ export default function Swap() {
             value: _amount,
           }
         );
-        setLoading(true);
         await _swapTokens.wait();
         setLoading(false);
         // toast.success();
@@ -291,6 +293,7 @@ export default function Swap() {
   const swapTokensForExactAmountOfEth = async (valueOut, path, valueIn) => {
     try {
       if (valueOut) {
+        setLoading(true);
         await approveTokens(
           selectedToken1.address,
           ethers.utils.parseEther(valueIn.toString())
@@ -303,7 +306,6 @@ export default function Swap() {
           address,
           _deadline
         );
-        setLoading(true);
         await _swapTokensForEth.wait();
         setLoading(false);
         // taost.success("");
@@ -317,6 +319,7 @@ export default function Swap() {
   const swapExactAmountOfTokensForEth = async (valueIn, path) => {
     try {
       if (valueIn) {
+        setLoading(true);
         await approveTokens(
           selectedToken1.address,
           ethers.utils.parseEther(valueIn.toString())
@@ -329,7 +332,6 @@ export default function Swap() {
           address,
           _deadline
         );
-        setLoading(true);
         await _swapTokensForEth.wait();
         setLoading(false);
         // toast.success("asdf");
