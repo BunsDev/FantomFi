@@ -8,6 +8,7 @@ import {
 import { configureChains, createClient, goerli, WagmiConfig } from "wagmi";
 // import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const fantomTestnet = {
   id: 4002,
@@ -64,7 +65,9 @@ export default function App({ Component, pageProps }) {
           // fontStack: "rounded",
         })}
       >
-        <Component {...pageProps} />
+        <ChakraProvider>
+          <Component {...pageProps} />
+        </ChakraProvider>
       </RainbowKitProvider>
     </WagmiConfig>
   );
