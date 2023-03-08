@@ -42,10 +42,11 @@ export default function Home() {
   return (
     <>
       <div
-        className={`w-screen min-h- pb-20 md:pb-0 lg:min-h-max no-repeat bg-cover ${!expand
+        className={`w-screen min-h- pb-20 md:pb-0 lg:min-h-max no-repeat bg-cover 
+        ${!expand
           ? `
-            bg-cover lg:bg-center bg-no-repeat`
-          : `bg-[#03071E]`
+            bg-cover bg-[#0e0928] lg:bg-center bg-no-repeat`
+          : `bg-[#090a1c]`
           }`}
       >
         {/* <Loader /> */}
@@ -87,7 +88,7 @@ export default function Home() {
           }`}
       >
         <div className="text-white w-full my-5 flex flex-col justify-center items-center mb-12 z-[1] lg:mb-20">
-          <h1 className=" text-3xl font-semiobold"> Our Main Features</h1>
+          <h1 className=" text-4xl font-semibold"> Features</h1>
           <div className="w-11/12 grid md:grid-cols-3   md:gap-4 gap-3 mt-8  rounded-md">
             <div className=" border px-6 py-10  bg-[#c3adff] text-gray-800">
               <h1 className=" text-2xl font-semibold mb-4 underline">
