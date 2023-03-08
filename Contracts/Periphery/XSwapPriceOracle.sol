@@ -22,6 +22,7 @@ contract XSwapPriceOracle {
     {
         address pair = XSwapLibrary.pairFor(factory, tokenA, tokenB);
         // priceA = IXSwapPair(pair).price0CumulativeLast();
+        (uint reserveA ,uint reserveB ,uint timeStamp )= IXSwapPair(pair).getReserves() ;
         priceA = (reserveB/reserveA);
     }
 
