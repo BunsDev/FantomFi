@@ -1,24 +1,24 @@
-# 🥳 XDC-Fi
+# 🥳 FantomFi
 
-https://user-images.githubusercontent.com/76868364/208483536-f404dff3-74e9-407f-b39b-ca5c2242d05a.mov
+<!-- https://user-images.githubusercontent.com/76868364/208483536-f404dff3-74e9-407f-b39b-ca5c2242d05a.mov -->
 
-_[Click on the video to view it on YouTube](https://youtu.be/IxsvO4jcZ48)_
+_[Click on the video to view it on YouTube](https://youtu.be/JyWLjRMyYW4)_
 
 ### Live Link
 
-[Checkout the live website here](https://xdc-fi.vercel.app/)
+[Checkout the live website here](https://fantomfi.vercel.app/)
 
 ## 🤷‍♀️ Question Time
 
-### 👨‍🔬 What is XDC-Fi?
+### 👨‍🔬 What is FantomFi?
 
-XDC-Fi is a DeFi project that consists of a staking app, lending app, and has an entire Decentralized Exchange built on top of the XDC chain [XDC-Fi](https://sc-dex-xdc.vercel.app/)
+FantomFi is a DeFi project that consists of a staking app, lending app, and has an entire Decentralized Exchange built on top of the Fantom chain [FantomFi](https://fantomfi.vercel.app/)
 
-And if that were'nt enough, it also consists of an entire npm package that allows you to interact with the core contracts to build different types of DeFi contracts and applications ontop of the XDC Chain.
+And if that were'nt enough, it also consists of an entire npm package that allows you to interact with the core contracts to build different types of DeFi contracts and applications ontop of the Fantom Chain.
 
-- [Click here to checkout the npm package](https://www.npmjs.com/package/xdefi-contracts)
+<!-- - [Click here to checkout the npm package](https://www.npmjs.com/package/xdefi-contracts) -->
 
-- [Read more about the contracts here in this repository](https://github.com/Dhruv-2003/XDefi-Contracts)
+<!-- - [Read more about the contracts here in this repository](https://github.com/Dhruv-2003/XDefi-Contracts) -->
 
 ### 🕵️ What is DeFi?
 
@@ -32,21 +32,19 @@ Decentralized finance (DeFi) is an emerging financial technology that challenges
 
 ## ☄️ What's next?
 
-XDC-Fi has been an amazing project to learn from and the chain XDC is quiet a fascinating chain with most of it's own tools to work with and as emerging and enthusiastic builders we are all up for the challenge to improve and consistently work on the product. We are also planning on adding more stuff to build on for users to make building in DeFi with XDC a lot more convenient and easier.
+FantomFi has been an amazing project to learn from and the chain Fantom is quiet a fascinating chain with most of it's own tools to work with and as emerging and enthusiastic builders we are all up for the challenge to improve and consistently work on the product. We are also planning on adding more stuff to build on for users to make building in DeFi with Fantom a lot more convenient and easier.
 
 ## ⚡ Hackathon
 
-This project was made for [XDC DeFi Hackathon](https://xdc.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Submissions+open)
+This project was re-made for [Fantom Hackathon](https://fantomq12023.devpost.com/)
 
 ## 🔩 Project Structure
 
-- [Web Frontend](https://sc-dex-xdc.vercel.app/)
+- [Web Frontend](https://fantomfi.vercel.app/)
 
-- [Figma Design](https://www.figma.com/file/B27kpCwAZHRhCaRyWg26MO/xdc?node-id=0%3A1&t=rkLNcNXfLu0kWQ4A-0)
+- [Backend](https://github.com/Dhruv-2003/SC-DEX-Fantom/tree/main/Backend)
 
-- [Backend](https://github.com/Dhruv-2003/SC-DEX-XDC/tree/main/Backend)
-
-- [Smart Contracts](https://github.com/Dhruv-2003/SC-DEX-XDC/tree/main/Contracts)
+- [Smart Contracts](https://github.com/kushagrasarathe/FantomFi/tree/main/Contracts)
 
 - ## 🚫 License
 
