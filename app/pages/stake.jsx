@@ -90,7 +90,7 @@ export default function Stake() {
 
   const handleStake = () => {
     if (selectedToken) {
-      if (selectedToken.symbol == "XDC") {
+      if (selectedToken.symbol == "FTM") {
         stakeEther();
       } else {
         stakeTokens();
@@ -100,7 +100,7 @@ export default function Stake() {
 
   const handleUnstake = () => {
     if (selectedToken) {
-      if (selectedToken.symbol == "XDC") {
+      if (selectedToken.symbol == "FTM") {
         withdrawEther();
       } else {
         withdraw();
@@ -110,7 +110,7 @@ export default function Stake() {
 
   const handleClaim = () => {
     if (selectedToken) {
-      if (selectedToken.symbol == "XDC") {
+      if (selectedToken.symbol == "FTM") {
         redeemRewardEth();
       } else {
         redeemRewards();
@@ -244,11 +244,7 @@ export default function Stake() {
   return (
     <div
       className={`w-screen min-h-screen no-repeat bg-cover bg-[#03071E]
-      ${
-        !expand
-          ? `bg-[#4532a1]`
-          : `bg-[#03071E]`
-      }
+      ${!expand ? `bg-[#4532a1]` : `bg-[#03071E]`}
           `}
     >
       <Navbar expand={expand} setExpand={setExpand} />
@@ -328,7 +324,7 @@ export default function Stake() {
                     </div>
                   </Listbox>
                 </div>
-                {/* <Link href="/xdc">
+                {/* <Link href="/FTM">
                   <button
                     type="button"
                     className=" flex hover:scale-105 transition ease-in-out items-center w- ml-6 mt-2 hover:bg-transparent border hover:border-gray-300 rounded-md opacity-90 text-xs font-semibold font-fredoka text-white px-3 py-2 mr-2 mb-2"
@@ -337,7 +333,7 @@ export default function Stake() {
                       className=" w-5 mr-2"
                       src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/ffffff/external-wallet-interface-kiranshastry-lineal-kiranshastry.png"
                     />
-                    Buy XDC
+                    Buy FTM
                   </button>
                 </Link> */}
               </div>
@@ -354,7 +350,7 @@ export default function Stake() {
                 </div>
                 <div className=" text-white">
                   <div className=" text-white">Wallet Balance</div>
-                  <div>XDC {balance}</div>
+                  <div>FTM {balance}</div>
                 </div>
               </div>
 

@@ -109,8 +109,8 @@ export default function Swap() {
     try {
       if (
         exactAmountIn &&
-        selectedToken1.symbol != "XDC" &&
-        selectedToken2.symbol != "XDC"
+        selectedToken1.symbol != "FTM" &&
+        selectedToken2.symbol != "FTM"
       ) {
         if (selectedToken1.symbol == "Tk1") {
           swapExactAmountOfTokens(amountOne, pathTK12);
@@ -119,8 +119,8 @@ export default function Swap() {
         }
       } else if (
         exactAmountOut &&
-        selectedToken1.symbol != "XDC" &&
-        selectedToken2.symbol != "XDC"
+        selectedToken1.symbol != "FTM" &&
+        selectedToken2.symbol != "FTM"
       ) {
         if (selectedToken1.symbol == "Tk1") {
           swapTokensForExactAmount(amountTwo, pathTK12);
@@ -128,15 +128,15 @@ export default function Swap() {
           swapExactAmountOfTokens(amountTwo, pathTK21);
         }
       } else if (exactAmountIn) {
-        if (selectedToken1.symbol == "XDC" && selectedToken2.symbol != "XDC") {
+        if (selectedToken1.symbol == "FTM" && selectedToken2.symbol != "FTM") {
           if (selectedToken2.symbol == "Tk1") {
             swapExactAmountOfEthForTokens(amountOne, pathXTk1);
           } else if (selectedToken2.symbol == "Tk2") {
             swapExactAmountOfEthForTokens(amountOne, pathXTk2);
           }
         } else if (
-          selectedToken1.symbol != "XDC" &&
-          selectedToken2.symbol == "XDC"
+          selectedToken1.symbol != "FTM" &&
+          selectedToken2.symbol == "FTM"
         ) {
           if (selectedToken1.symbol == "Tk1") {
             swapExactAmountOfTokensForEth(amountOne, pathTk1X);
@@ -145,15 +145,15 @@ export default function Swap() {
           }
         }
       } else if (exactAmountOut) {
-        if (selectedToken1.symbol == "XDC" && selectedToken2.symbol != "XDC") {
+        if (selectedToken1.symbol == "FTM" && selectedToken2.symbol != "FTM") {
           if (selectedToken2.symbol == "Tk1") {
             swapEthForExactAmountOfTokens(amountTwo, pathXTk1, amountOne);
           } else if (selectedToken2.symbol == "Tk2") {
             swapEthForExactAmountOfTokens(amountTwo, pathXTk2, amountOne);
           }
         } else if (
-          selectedToken1.symbol != "XDC" &&
-          selectedToken2.symbol == "XDC"
+          selectedToken1.symbol != "FTM" &&
+          selectedToken2.symbol == "FTM"
         ) {
           if (selectedToken1.symbol == "Tk1") {
             swapTokensForExactAmountOfEth(amountTwo, pathTk1X, amountOne);
@@ -187,7 +187,7 @@ export default function Swap() {
   const swapExactAmountOfTokens = async (valueIn, path) => {
     try {
       if (valueIn) {
-        // await approveTokens(selectedToken1.address, valueIn);
+        await approveTokens(selectedToken1.address, valueIn);
         // path[0] = selectedToken1.address;
         // path[1] = selectedToken1.address;
         const deadline = getDeadline();
@@ -391,12 +391,13 @@ export default function Swap() {
 
   /// fetched reserves when both tokens are set
   useEffect(() => {
+    console.log(selectedToken1, selectedToken2);
     if (
       selectedToken1 != 0 &&
       selectedToken2 != 0 &&
       selectedToken1 != selectedToken2
     ) {
-      // if (selectedToken1.symbol != "XDC" && selectedToken2.symbol != "XDC") {
+      // if (selectedToken1.symbol != "FTM" && selectedToken2.symbol != "FTM") {
       //   getReserves(selectedToken1.address, selectedToken2.address);
       // }
       getReserves(selectedToken1.address, selectedToken2.address);
@@ -405,13 +406,9 @@ export default function Swap() {
 
   return (
     <div
-    // `${styles.bg} bg-[url('../assets/landing.png')]`  
+      // `${styles.bg} bg-[url('../assets/landing.png')]`
       className={`w-screen min-h-screen no-repeat bg-cover bg-[#03071E]
-      ${
-          !expand
-            ? `bg-[#4532a1]`
-            : `bg-[#03071E]`
-        }
+      ${!expand ? `bg-[#4532a1]` : `bg-[#03071E]`}
           `}
     >
       <Navbar expand={expand} setExpand={setExpand} />
@@ -421,7 +418,7 @@ export default function Swap() {
             <h2 className=" rounded-t-md text-xl font-semibold tracking-wid w-full bg-[blue-700] py-4 px-4 border-b border-gray-400">
               Swap Tokens
             </h2>
-         
+
             <div className=" px-4 py-8">
               <label className="" htmlFor="">
                 Enter Value

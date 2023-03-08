@@ -12,7 +12,7 @@ import {
   SWAP_ROUTER_ADDRESS,
   SWAP_ROUTER_ABI,
   Token_ABI,
-  WXDC_ADDRESS,
+  WFTM_ADDRESS,
   TOKEN_ONE_ADDRESS,
   SWAP_FACTORY_ABI,
   SWAP_FACTORY_ADDRESS,
@@ -76,20 +76,20 @@ export default function Pool() {
 
   const handleAddliquidity = () => {
     if (selectedToken1 && selectedToken2 && selectedToken1 != selectedToken2) {
-      if (selectedToken1.symbol != "XDC" && selectedToken2.symbol != "XDC") {
+      if (selectedToken1.symbol != "FTM" && selectedToken2.symbol != "FTM") {
         addLiquidityContract(
           desiredAmountA,
           desiredAmountB,
           selectedToken1.address,
           selectedToken2.address
         );
-      } else if (selectedToken1.symbol == "XDC") {
+      } else if (selectedToken1.symbol == "FTM") {
         addLiquidityEthContract(
           selectedToken2.address,
           desiredAmountB,
           desiredAmountA
         );
-      } else if (selectedToken2.symbol == "XDC") {
+      } else if (selectedToken2.symbol == "FTM") {
         addLiquidityEthContract(
           selectedToken1.address,
           desiredAmountA,
@@ -156,10 +156,10 @@ export default function Pool() {
     ETHValue
   ) => {
     try {
-      // await approveTokens(
-      //   addressToken,
-      //   ethers.utils.parseEther(tokenValue.toString())
-      // );
+      await approveTokens(
+        addressToken,
+        ethers.utils.parseEther(tokenValue.toString())
+      );
       const _amount = ethers.utils.parseEther(ETHValue.toString());
       const _deadline = getDeadline();
       const _addLiquidity = await contract.addLiquidityETH(
@@ -222,7 +222,7 @@ export default function Pool() {
       token1Address != token2Address &&
       liquidity
     ) {
-      if (token1Address != WXDC_ADDRESS && token2Address != WXDC_ADDRESS) {
+      if (token1Address != WFTM_ADDRESS && token2Address != WFTM_ADDRESS) {
         removeLiquidityContract(
           token1Address,
           token2Address,
@@ -230,13 +230,13 @@ export default function Pool() {
           liquidity
         );
       } else if (
-        token1Address == WXDC_ADDRESS &&
-        token2Address != WXDC_ADDRESS
+        token1Address == WFTM_ADDRESS &&
+        token2Address != WFTM_ADDRESS
       ) {
         removeLiquidityEthContract(token2Address, pairAddress, liquidity);
       } else if (
-        token1Address != WXDC_ADDRESS &&
-        token2Address == WXDC_ADDRESS
+        token1Address != WFTM_ADDRESS &&
+        token2Address == WFTM_ADDRESS
       ) {
         removeLiquidityEthContract(token1Address, pairAddress, liquidity);
       }
@@ -360,6 +360,7 @@ export default function Pool() {
 
   /// fetched reserves when both tokens are set
   useEffect(() => {
+    console.log(selectedToken1, selectedToken2);
     if (
       selectedToken1 != 0 &&
       selectedToken2 != 0 &&
@@ -380,11 +381,7 @@ export default function Pool() {
   return (
     <div
       className={`w-screen min-h-screen no-repeat bg-cover bg-[#03071E]
-      ${
-        !expand
-          ? `bg-[#4532a1]`
-          : `bg-[#03071E]`
-      }
+      ${!expand ? `bg-[#4532a1]` : `bg-[#03071E]`}
           `}
     >
       <Navbar expand={expand} setExpand={setExpand} />
@@ -400,7 +397,7 @@ export default function Pool() {
                 + New Pool
               </button>
             </div>
-            
+
             <div
               className={`${
                 toggle ? `visible` : `hidden`

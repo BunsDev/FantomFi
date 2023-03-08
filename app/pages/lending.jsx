@@ -123,7 +123,7 @@ export default function Lending() {
 
   const handleSupply = async () => {
     if (selectedToken) {
-      if (selectedToken.symbol == "XDC") {
+      if (selectedToken.symbol == "FTM") {
         depositEther();
       } else {
         depositToken();
@@ -133,7 +133,7 @@ export default function Lending() {
 
   const handleBorrow = async () => {
     if (selectedToken) {
-      if (selectedToken.symbol == "XDC") {
+      if (selectedToken.symbol == "FTM") {
         borrowEther();
       } else {
         borrowToken();
@@ -143,7 +143,7 @@ export default function Lending() {
 
   const handleWithdraw = async () => {
     if (selectedToken) {
-      if (selectedToken.symbol == "XDC") {
+      if (selectedToken.symbol == "FTM") {
         withdrawEther();
       } else {
         withdrawToken();
@@ -153,7 +153,7 @@ export default function Lending() {
 
   const handleRepay = async () => {
     if (selectedToken) {
-      if (selectedToken.symbol == "XDC") {
+      if (selectedToken.symbol == "FTM") {
         repayEther();
       } else {
         repayToken();

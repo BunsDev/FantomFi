@@ -1,20 +1,20 @@
 export const tokens = [
   {
-    name: "Xinfin",
-    symbol: "XDC",
-    address: "0xA5A51315b449C7026164111ED142E87cd1C865B7",
+    name: "Fantom",
+    symbol: "FTM",
+    address: "0xeDFA5C57C5396d2767bf74368291c9890BcDea14",
     logo: "",
   },
   {
     name: "Token1",
     symbol: "Tk1",
-    address: "0x1927d7a542826728a25b23acd280b57ac37bb930",
+    address: "0x8293ab89EB972186D928C827FbE47e29d46606D7",
     logo: "",
   },
   {
     name: "Token2",
     symbol: "Tk2",
-    address: "0xec80ee7f0e65f696f09206859615ffe5626c384c",
+    address: "0x3ebc886aBd59eB66146BD2bcee4de7BEA3Fd2eb6",
     logo: "",
   },
   {
