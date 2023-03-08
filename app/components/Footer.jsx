@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="flex items-center justify-between w-52">
         <div className="border-2 border-[#FCF8E8] rounded-full p-2">
           <a
-            href="https://www.linkedin.com/in/abbas-khan-033802222"
+            href="https://www.linkedin.com/in/kushagrasarathe"
             target="_blank"
             rel="noreferrer"
           >
@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
         <div className="border-2 border-[#FCF8E8] rounded-full p-2">
           <a
-            href="https://github.com/Abbas-Khann/SC-DEX-Fantom"
+            href="https://github.com/kushagrasarathe/FantomFi"
             target="_blank"
             rel="noreferrer"
           >
@@ -34,7 +34,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="border-2 border-[#FCF8E8] rounded-full p-2">
-          <a href="https://twitter.com/KhanAbbas201" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/0xdhruva" target="_blank" rel="noreferrer">
             <BsTwitter className="text-lg hover:animate-pulse active:animate-ping" />
           </a>
         </div>
